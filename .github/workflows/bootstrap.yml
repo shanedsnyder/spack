@@ -37,7 +37,7 @@ jobs:
           # - https://github.blog/2022-04-12-git-security-vulnerability-announced/
           # - https://github.com/actions/checkout/issues/760
           git config --global --add safe.directory /__w/spack/spack
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # @v2
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # @v2
       - name: Setup repo and non-root user
         run: |
           git --version
@@ -75,7 +75,7 @@ jobs:
           # - https://github.com/actions/checkout/issues/760
           # - http://changelogs.ubuntu.com/changelogs/pool/main/g/git/git_2.25.1-1ubuntu3.3/changelog
           git config --global --add safe.directory /__w/spack/spack
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # @v2
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # @v2
       - name: Setup repo and non-root user
         run: |
           git --version
@@ -112,7 +112,7 @@ jobs:
           # - https://github.com/actions/checkout/issues/760
           # - http://changelogs.ubuntu.com/changelogs/pool/main/g/git/git_2.25.1-1ubuntu3.3/changelog
           git config --global --add safe.directory /__w/spack/spack
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # @v2
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # @v2
       - name: Setup repo and non-root user
         run: |
           git --version
@@ -140,7 +140,7 @@ jobs:
               bzip2 curl file gcc-c++ gcc gcc-fortran tar git gpg2 gzip \
               make patch unzip which xz python3 python3-devel tree \
               cmake bison
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # @v2
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # @v2
       - name: Setup repo and non-root user
         run: |
           git --version
@@ -162,7 +162,7 @@ jobs:
       - name: Install dependencies
         run: |
           brew install cmake bison@2.7 tree
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # @v2
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # @v2
       - name: Bootstrap clingo
         run: |
           source share/spack/setup-env.sh
@@ -181,7 +181,7 @@ jobs:
       - name: Install dependencies
         run: |
           brew install tree
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # @v2
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # @v2
       - uses: actions/setup-python@98f2ad02fd48d057ee3b4d4f66525b231c3e52b6 # @v2
         with:
           python-version: ${{ matrix.python-version }}
@@ -198,7 +198,7 @@ jobs:
       matrix:
         python-version: ['2.7', '3.5', '3.6', '3.7', '3.8', '3.9', '3.10']
     steps:
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # @v2
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b # @v2
       - uses: actions/setup-python@98f2ad02fd48d057ee3b4d4f66525b231c3e52b6 # @v2
         with:
           python-version: ${{ matrix.python-version }}
@@ -234,7 +234,7 @@ jobs:
           # - https://github.com/actions/checkout/issues/760
           # - http://changelogs.ubuntu.com/changelogs/pool/main/g/git/git_2.25.1-1ubuntu3.3/changelog
           git config --global --add safe.directory /__w/spack/spack
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
       - name: Setup repo and non-root user
         run: |
           git --version
@@ -271,7 +271,7 @@ jobs:
           # - https://github.com/actions/checkout/issues/760
           # - http://changelogs.ubuntu.com/changelogs/pool/main/g/git/git_2.25.1-1ubuntu3.3/changelog
           git config --global --add safe.directory /__w/spack/spack
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
       - name: Setup repo and non-root user
         run: |
           git --version
@@ -296,7 +296,7 @@ jobs:
           brew install tree
           # Remove GnuPG since we want to bootstrap it
           sudo rm -rf /usr/local/bin/gpg
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
       - name: Bootstrap GnuPG
         run: |
           source share/spack/setup-env.sh
@@ -312,7 +312,7 @@ jobs:
           brew install gawk tree
           # Remove GnuPG since we want to bootstrap it
           sudo rm -rf /usr/local/bin/gpg
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
+      - uses: actions/checkout@755da8c3cf115ac066823e79a1e1788f8940201b
       - name: Bootstrap GnuPG
         run: |
           source share/spack/setup-env.sh
